@@ -1,9 +1,9 @@
 // Sambhav API client: bearer-token storage plus GET / POST / PATCH helpers.
 // The base URL comes from NEXT_PUBLIC_API_URL (e.g. http://localhost:5000/api).
 
-const BASE_URL = "https://sambhav-backend-0r2k.onrender.com";
+const BASE_URL = "https://sambhav-backend-0r2k.onrender.com/api";
 
-  const TOKEN_KEY = "sambhav_token";
+const TOKEN_KEY = "sambhav_token";
 
 export function getToken(): string | null {
   if (typeof window === "undefined") return null;
