@@ -7,7 +7,9 @@ import { cn } from "@/lib/utils";
 // Colors carry meaning: gray = nobody yet, blue = being worked on, green = solved.
 const STATUS_STYLES: Record<ProblemStatus, string> = {
   open: "bg-card text-muted-foreground ring-1 ring-inset ring-border [--dot:var(--muted-foreground)]",
+  "team-forming": "bg-warning/12 text-warning [--dot:var(--warning)]",
   "in-progress": "bg-primary/10 text-primary [--dot:var(--primary)]",
+  piloting: "bg-primary/10 text-primary [--dot:var(--primary)]",
   completed: "bg-success/12 text-success [--dot:var(--success)]",
 };
 

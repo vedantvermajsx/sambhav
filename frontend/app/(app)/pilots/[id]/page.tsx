@@ -95,7 +95,7 @@ export default function PilotPage({ params }: PageProps<"/pilots/[id]">) {
           {t("pilot.kpis")}
         </h2>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-          {pilot.kpis.map((kpi) => (
+          {pilot.kpis.map((kpi: KPI) => (
             <KpiCard key={kpi.name} kpi={kpi} />
           ))}
         </div>

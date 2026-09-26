@@ -4,7 +4,12 @@
 export type Role = "student" | "researcher" | "industry";
 
 /** open = nobody started · in-progress = a team is working · completed = solved. */
-export type ProblemStatus = "open" | "in-progress" | "completed";
+export type ProblemStatus =
+  | "open"
+  | "team-forming"
+  | "in-progress"
+  | "piloting"
+  | "completed";
 
 export type CustomFieldType = "text" | "number" | "select";
 

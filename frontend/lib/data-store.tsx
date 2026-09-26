@@ -14,7 +14,9 @@ import React, {
 } from "react";
 import type {
   Category,
+  Pilot,
   Problem,
+  Role,
   SharedDoc,
   TaskStatus,
   Team,
@@ -48,6 +50,11 @@ interface DataValue {
 
   getTeam: (id: string) => Team | undefined;
   getTeamByProblem: (problemId: string) => Team | undefined;
+  joinTeam: (teamId: string, userId: string, role: Role) => Promise<Team>;
+
+  getPilots: () => Pilot[];
+  getPilot: (id: string) => Pilot | undefined;
+  getPilotByProblem: (problemId: string) => Pilot | undefined;
 
   getWorkspace: (id: string) => Workspace | undefined;
   addWorkspaceTask: (workspaceId: string, title: string) => Promise<void>;
@@ -69,6 +76,7 @@ const fetchAll = () =>
     api.fetchUsers(),
     api.fetchTeams(),
     api.fetchWorkspaces(),
+    api.fetchPilots(),
   ]);
 
 /** Replaces the item with the same id, or adds it at the front. */
@@ -84,16 +92,18 @@ export function DataProvider({ children }: { children: React.ReactNode }) {
   const [users, setUsers] = useState<User[]>([]);
   const [teams, setTeams] = useState<Team[]>([]);
   const [workspaces, setWorkspaces] = useState<Workspace[]>([]);
+  const [pilots, setPilots] = useState<Pilot[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
   const applyAll = useCallback(
-    ([cats, probs, usrs, tms, wss]: Awaited<ReturnType<typeof fetchAll>>) => {
+    ([cats, probs, usrs, tms, wss, plts]: Awaited<ReturnType<typeof fetchAll>>) => {
       setCategories(cats);
       setProblems(probs);
       setUsers(usrs);
       setTeams(tms);
       setWorkspaces(wss);
+      setPilots(plts);
       setError(null);
     },
     []
@@ -169,6 +179,15 @@ export function DataProvider({ children }: { children: React.ReactNode }) {
 
       getTeam: (id) => teams.find((t) => t.id === id),
       getTeamByProblem: (problemId) => teams.find((t) => t.problemId === problemId),
+      joinTeam: async (teamId, userId, role) => {
+        const updatedTeam = await api.joinTeam(teamId, userId, role);
+        setTeams((prev) => upsert(prev, updatedTeam));
+        return updatedTeam;
+      },
+
+      getPilots: () => pilots,
+      getPilot: (id) => pilots.find((p) => p.id === id),
+      getPilotByProblem: (problemId) => pilots.find((p) => p.problemId === problemId),
 
       getWorkspace: (id) => workspaces.find((w) => w.id === id),
       addWorkspaceTask: async (workspaceId, title) =>
@@ -182,7 +201,7 @@ export function DataProvider({ children }: { children: React.ReactNode }) {
       addWorkspaceDoc: async (workspaceId, doc) =>
         setWorkspace(await api.addWorkspaceDoc(workspaceId, doc)),
     };
-  }, [loading, error, refetch, categories, problems, users, teams, workspaces]);
+  }, [loading, error, refetch, categories, problems, users, teams, workspaces, pilots]);
 
   return <DataContext.Provider value={value}>{children}</DataContext.Provider>;
 }

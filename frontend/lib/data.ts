@@ -4,6 +4,7 @@
 import { apiGet, apiPost, apiPatch } from "@/lib/api";
 import type {
   Category,
+  Pilot,
   Problem,
   Role,
   SharedDoc,
@@ -37,6 +38,7 @@ export const fetchProblems = () => apiGet<Problem[]>("/problems", false);
 export const fetchUsers = () => apiGet<User[]>("/users", false);
 export const fetchTeams = () => apiGet<Team[]>("/teams", false);
 export const fetchWorkspaces = () => apiGet<Workspace[]>("/workspaces", false);
+export const fetchPilots = () => apiGet<Pilot[]>("/pilots", false);
 
 // --- Users ---
 export const updateMyAvatar = (avatarUrl: string) =>

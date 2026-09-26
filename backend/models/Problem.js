@@ -39,7 +39,11 @@ const ProblemSchema = new mongoose.Schema(
       min: 0,
       validate: { validator: Number.isInteger, message: "rewardPoints must be a whole number" },
     },
-    status: { type: String, enum: ["open", "in-progress", "completed"], default: "open" },
+    status: {
+      type: String,
+      enum: ["open", "team-forming", "in-progress", "piloting", "completed"],
+      default: "open",
+    },
     // Filled in once, when the problem is marked solved.
     rewards: [RewardSchema],
     completedAt: { type: Date },
