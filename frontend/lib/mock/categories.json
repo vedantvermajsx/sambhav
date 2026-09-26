@@ -1,0 +1,37 @@
+[
+  {
+    "id": "cat-waste",
+    "name": "Waste Management",
+    "icon": "Trash2",
+    "accentColor": "oklch(0.46 0.098 156)",
+    "customFields": [
+      { "key": "wasteType", "label": "Waste Type", "type": "select", "options": ["Mixed municipal", "Organic", "Plastic", "Construction debris", "E-waste"] },
+      { "key": "volumePerDay", "label": "Estimated Volume", "type": "number", "unit": "kg/day" },
+      { "key": "collectionGap", "label": "Days Since Last Collection", "type": "number", "unit": "days" },
+      { "key": "affectedPopulation", "label": "People Affected", "type": "number" }
+    ]
+  },
+  {
+    "id": "cat-water",
+    "name": "Water Quality",
+    "icon": "Droplets",
+    "accentColor": "oklch(0.6 0.1 200)",
+    "customFields": [
+      { "key": "sourceType", "label": "Water Source", "type": "select", "options": ["Borewell", "River", "Municipal supply", "Pond", "Rainwater tank"] },
+      { "key": "contaminant", "label": "Primary Concern", "type": "select", "options": ["Turbidity", "Bacterial", "Heavy metals", "Salinity", "Unknown"] },
+      { "key": "phLevel", "label": "Measured pH", "type": "number" },
+      { "key": "householdsAffected", "label": "Households Affected", "type": "number" }
+    ]
+  },
+  {
+    "id": "cat-energy",
+    "name": "Energy Access",
+    "icon": "Zap",
+    "accentColor": "oklch(0.78 0.14 75)",
+    "customFields": [
+      { "key": "issueType", "label": "Issue Type", "type": "select", "options": ["Frequent outages", "No grid access", "High tariff", "Voltage fluctuation"] },
+      { "key": "outageHours", "label": "Avg Daily Outage", "type": "number", "unit": "hrs/day" },
+      { "key": "sitesAffected", "label": "Sites Affected", "type": "number" }
+    ]
+  }
+]

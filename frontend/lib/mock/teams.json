@@ -1,0 +1,39 @@
+[
+  {
+    "id": "team-hostel-waste",
+    "problemId": "prob-hostel-waste",
+    "members": [
+      { "userId": "user-student-1", "role": "student" },
+      { "userId": "user-student-2", "role": "student" },
+      { "userId": "user-researcher-1", "role": "researcher" },
+      { "userId": "user-industry-1", "role": "industry" }
+    ],
+    "openSlots": [],
+    "workspaceId": "ws-hostel-waste"
+  },
+  {
+    "id": "team-market-waste",
+    "problemId": "prob-market-waste",
+    "members": [
+      { "userId": "user-student-2", "role": "student" }
+    ],
+    "openSlots": [
+      { "role": "student", "count": 1 },
+      { "role": "researcher", "count": 1 },
+      { "role": "industry", "count": 1 }
+    ],
+    "workspaceId": "ws-market-waste"
+  },
+  {
+    "id": "team-campus-outage",
+    "problemId": "prob-campus-outage",
+    "members": [
+      { "userId": "user-researcher-2", "role": "researcher" },
+      { "userId": "user-industry-2", "role": "industry" }
+    ],
+    "openSlots": [
+      { "role": "student", "count": 2 }
+    ],
+    "workspaceId": "ws-campus-outage"
+  }
+]

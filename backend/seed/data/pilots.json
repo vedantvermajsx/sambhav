@@ -1,0 +1,94 @@
+[
+  {
+    "id": "pilot-hostel-waste",
+    "problemId": "prob-hostel-waste",
+    "startDate": "2026-07-15",
+    "durationMonths": 3,
+    "status": "on-track",
+    "kpis": [
+      {
+        "name": "Landfill Waste Diverted",
+        "target": 60,
+        "currentValue": 42,
+        "unit": "%",
+        "series": [
+          { "week": 1, "value": 5 },
+          { "week": 2, "value": 12 },
+          { "week": 3, "value": 18 },
+          { "week": 4, "value": 24 },
+          { "week": 5, "value": 30 },
+          { "week": 6, "value": 34 },
+          { "week": 7, "value": 39 },
+          { "week": 8, "value": 42 }
+        ]
+      },
+      {
+        "name": "Collection Frequency",
+        "target": 7,
+        "currentValue": 6,
+        "unit": "pickups/wk",
+        "series": [
+          { "week": 1, "value": 2 },
+          { "week": 2, "value": 3 },
+          { "week": 3, "value": 4 },
+          { "week": 4, "value": 5 },
+          { "week": 5, "value": 5 },
+          { "week": 6, "value": 6 },
+          { "week": 7, "value": 6 },
+          { "week": 8, "value": 6 }
+        ]
+      },
+      {
+        "name": "Resident Satisfaction",
+        "target": 80,
+        "currentValue": 71,
+        "unit": "%",
+        "series": [
+          { "week": 1, "value": 40 },
+          { "week": 2, "value": 44 },
+          { "week": 3, "value": 52 },
+          { "week": 4, "value": 58 },
+          { "week": 5, "value": 62 },
+          { "week": 6, "value": 66 },
+          { "week": 7, "value": 69 },
+          { "week": 8, "value": 71 }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pilot-campus-outage",
+    "problemId": "prob-campus-outage",
+    "startDate": "2026-08-01",
+    "durationMonths": 3,
+    "status": "at-risk",
+    "kpis": [
+      {
+        "name": "Outage Hours Reduced",
+        "target": 90,
+        "currentValue": 55,
+        "unit": "%",
+        "series": [
+          { "week": 1, "value": 0 },
+          { "week": 2, "value": 10 },
+          { "week": 3, "value": 22 },
+          { "week": 4, "value": 40 },
+          { "week": 5, "value": 55 }
+        ]
+      },
+      {
+        "name": "Equipment Faults",
+        "target": 0,
+        "currentValue": 2,
+        "unit": "faults/mo",
+        "series": [
+          { "week": 1, "value": 6 },
+          { "week": 2, "value": 5 },
+          { "week": 3, "value": 4 },
+          { "week": 4, "value": 3 },
+          { "week": 5, "value": 2 }
+        ]
+      }
+    ]
+  }
+]

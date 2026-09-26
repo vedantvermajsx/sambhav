@@ -1,0 +1,50 @@
+[
+  {
+    "id": "user-student-1",
+    "name": "Aarav Mehta",
+    "role": "student",
+    "skills": ["Data Analysis", "GIS Mapping", "Survey Design"],
+    "incentive": { "credits": 240 },
+    "initials": "AM"
+  },
+  {
+    "id": "user-student-2",
+    "name": "Priya Nair",
+    "role": "student",
+    "skills": ["UI/UX", "Community Outreach", "Python"],
+    "incentive": { "credits": 180 },
+    "initials": "PN"
+  },
+  {
+    "id": "user-researcher-1",
+    "name": "Dr. Kavita Rao",
+    "role": "researcher",
+    "skills": ["Environmental Engineering", "Waste-to-Energy", "Grant Writing"],
+    "incentive": { "grants": 1 },
+    "initials": "KR"
+  },
+  {
+    "id": "user-researcher-2",
+    "name": "Dr. Imran Sheikh",
+    "role": "researcher",
+    "skills": ["Hydrology", "Water Treatment", "Statistics"],
+    "incentive": { "grants": 2 },
+    "initials": "IS"
+  },
+  {
+    "id": "user-industry-1",
+    "name": "Rohan Kapoor",
+    "role": "industry",
+    "skills": ["Operations", "Logistics", "Supply Chain"],
+    "incentive": { "sponsorship": 350000 },
+    "initials": "RK"
+  },
+  {
+    "id": "user-industry-2",
+    "name": "Sneha Iyer",
+    "role": "industry",
+    "skills": ["Product Strategy", "Circular Economy", "Partnerships"],
+    "incentive": { "sponsorship": 500000 },
+    "initials": "SI"
+  }
+]

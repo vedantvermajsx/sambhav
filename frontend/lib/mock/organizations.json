@@ -1,0 +1,26 @@
+[
+  {
+    "id": "org-campus-fac",
+    "name": "Campus Facilities Office, Vishwakarma University",
+    "type": "academic",
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "org-municipal",
+    "name": "Pune Municipal Corporation - Ward 14",
+    "type": "municipal",
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "org-ngo-jal",
+    "name": "Jaldaan Rural Water Trust",
+    "type": "NGO",
+    "verificationStatus": "verified"
+  },
+  {
+    "id": "org-greentech",
+    "name": "GreenGrid Energy Pvt. Ltd.",
+    "type": "private",
+    "verificationStatus": "pending"
+  }
+]

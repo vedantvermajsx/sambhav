@@ -1,0 +1,92 @@
+[
+  {
+    "id": "prob-hostel-waste",
+    "title": "Uncollected waste near university hostel block",
+    "categoryId": "cat-waste",
+    "description": "Campus facilities have flagged a persistent pile-up of mixed municipal waste behind Hostel Block C. Municipal collection routes skip this internal road, so garbage accumulates for days, attracting pests and creating a health hazard for ~1,200 resident students. Facilities has photos, weekly weight logs, and a location map.",
+    "location": "Hostel Block C, Vishwakarma University, Pune",
+    "submittingOrgId": "org-campus-fac",
+    "customFieldValues": {
+      "wasteType": "Mixed municipal",
+      "volumePerDay": 320,
+      "collectionGap": 5,
+      "affectedPopulation": 1200
+    },
+    "dataAttachments": [
+      { "name": "weekly-weight-log.csv", "type": "csv", "size": "48 KB" },
+      { "name": "collection-route-map.pdf", "type": "pdf", "size": "1.2 MB" }
+    ],
+    "proofAttachments": [
+      { "name": "site-photo-block-c-1.jpg", "type": "jpg", "size": "2.4 MB" },
+      { "name": "site-photo-block-c-2.jpg", "type": "jpg", "size": "2.1 MB" }
+    ],
+    "status": "piloting",
+    "createdAt": "2026-06-12"
+  },
+  {
+    "id": "prob-market-waste",
+    "title": "Overflowing bins at Ward 14 vegetable market",
+    "categoryId": "cat-waste",
+    "description": "The daily vegetable market generates high volumes of organic waste that overwhelm the two public bins on site. Vendors report overflow by midday. The municipal ward office wants a segregation-and-composting pilot to cut landfill load and create usable compost for nearby parks.",
+    "location": "Ward 14 Market, Pune",
+    "submittingOrgId": "org-municipal",
+    "customFieldValues": {
+      "wasteType": "Organic",
+      "volumePerDay": 540,
+      "collectionGap": 1,
+      "affectedPopulation": 3000
+    },
+    "dataAttachments": [
+      { "name": "bin-fill-survey.csv", "type": "csv", "size": "22 KB" }
+    ],
+    "proofAttachments": [
+      { "name": "market-overflow.jpg", "type": "jpg", "size": "1.8 MB" }
+    ],
+    "status": "team-forming",
+    "createdAt": "2026-07-28"
+  },
+  {
+    "id": "prob-borewell-water",
+    "title": "Turbid borewell water in rural school cluster",
+    "categoryId": "cat-water",
+    "description": "Three village schools share borewells that turn visibly turbid after monsoon, forcing classes to buy expensive bottled water. The NGO has collected turbidity readings and household survey data and wants a low-cost filtration pilot validated by researchers.",
+    "location": "Junnar taluka, Pune district",
+    "submittingOrgId": "org-ngo-jal",
+    "customFieldValues": {
+      "sourceType": "Borewell",
+      "contaminant": "Turbidity",
+      "phLevel": 7.4,
+      "householdsAffected": 210
+    },
+    "dataAttachments": [
+      { "name": "turbidity-readings.xlsx", "type": "xlsx", "size": "63 KB" },
+      { "name": "household-survey.csv", "type": "csv", "size": "31 KB" }
+    ],
+    "proofAttachments": [
+      { "name": "water-sample-compare.jpg", "type": "jpg", "size": "2.9 MB" }
+    ],
+    "status": "open",
+    "createdAt": "2026-08-15"
+  },
+  {
+    "id": "prob-campus-outage",
+    "title": "Frequent power outages in campus research labs",
+    "categoryId": "cat-energy",
+    "description": "Research labs experience daily voltage fluctuations and short outages that damage sensitive equipment and interrupt long-running experiments. The energy provider proposes a solar-plus-storage micro-pilot but needs cross-functional validation before scaling.",
+    "location": "Science Block, Vishwakarma University, Pune",
+    "submittingOrgId": "org-greentech",
+    "customFieldValues": {
+      "issueType": "Voltage fluctuation",
+      "outageHours": 3.5,
+      "sitesAffected": 6
+    },
+    "dataAttachments": [
+      { "name": "voltage-log-30days.csv", "type": "csv", "size": "88 KB" }
+    ],
+    "proofAttachments": [
+      { "name": "equipment-fault-report.pdf", "type": "pdf", "size": "740 KB" }
+    ],
+    "status": "in-progress",
+    "createdAt": "2026-07-05"
+  }
+]

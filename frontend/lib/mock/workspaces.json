@@ -1,0 +1,53 @@
+[
+  {
+    "id": "ws-hostel-waste",
+    "teamId": "team-hostel-waste",
+    "tasks": [
+      { "title": "Baseline waste weighing (2 weeks)", "status": "done", "assignee": "user-student-1" },
+      { "title": "Design 3-bin segregation stations", "status": "done", "assignee": "user-researcher-1" },
+      { "title": "Vendor quotes for compost unit", "status": "in-progress", "assignee": "user-industry-1" },
+      { "title": "Student volunteer roster", "status": "in-progress", "assignee": "user-student-2" },
+      { "title": "Week-8 impact survey", "status": "todo", "assignee": "user-student-1" }
+    ],
+    "sharedDocs": [
+      { "name": "Pilot Plan v3.docx", "type": "docx" },
+      { "name": "Segregation Station Specs.pdf", "type": "pdf" },
+      { "name": "Baseline Data Dashboard.xlsx", "type": "xlsx" }
+    ],
+    "updates": [
+      { "author": "user-researcher-1", "text": "Compost unit design finalized, moving to procurement.", "at": "2026-08-30" },
+      { "author": "user-student-1", "text": "Week-6 weight down 34% vs baseline. Trending well.", "at": "2026-08-28" },
+      { "author": "user-industry-1", "text": "Received two vendor quotes; comparing lead times.", "at": "2026-08-25" }
+    ]
+  },
+  {
+    "id": "ws-market-waste",
+    "teamId": "team-market-waste",
+    "tasks": [
+      { "title": "Map vendor waste-generation points", "status": "in-progress", "assignee": "user-student-2" },
+      { "title": "Recruit researcher for composting", "status": "todo", "assignee": "user-student-2" }
+    ],
+    "sharedDocs": [
+      { "name": "Market Survey Notes.docx", "type": "docx" }
+    ],
+    "updates": [
+      { "author": "user-student-2", "text": "Team forming - still need a researcher and an industry partner.", "at": "2026-08-29" }
+    ]
+  },
+  {
+    "id": "ws-campus-outage",
+    "teamId": "team-campus-outage",
+    "tasks": [
+      { "title": "Audit lab load profile", "status": "done", "assignee": "user-researcher-2" },
+      { "title": "Size solar + storage system", "status": "in-progress", "assignee": "user-industry-2" },
+      { "title": "Draft ROI model", "status": "todo", "assignee": "user-industry-2" }
+    ],
+    "sharedDocs": [
+      { "name": "Load Audit Report.pdf", "type": "pdf" },
+      { "name": "System Sizing Sheet.xlsx", "type": "xlsx" }
+    ],
+    "updates": [
+      { "author": "user-industry-2", "text": "Load audit complete; sizing a 25 kW array with 40 kWh storage.", "at": "2026-08-27" }
+    ]
+  }
+]
