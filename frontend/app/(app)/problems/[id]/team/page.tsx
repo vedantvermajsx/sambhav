@@ -28,7 +28,7 @@ export default function TeamPage({ params }: PageProps<"/problems/[id]/team">) {
   const { t } = useI18n();
   const { role, user } = useSession();
   const router = useRouter();
-  const { getProblem, getCategory, getTeamByProblem, getUser, joinTeam } =
+  const { getProblem, getCategory, getTeamByProblem, joinTeam } =
     useData();
 
   const problem = getProblem(id);
@@ -64,7 +64,7 @@ export default function TeamPage({ params }: PageProps<"/problems/[id]/team">) {
     try {
       const updated = await joinTeam(seedTeam.id, user.id, joinRole);
       setMembers(updated.members);
-      setOpenSlots(updated.openSlots);
+      setOpenSlots(updated.openSlots ?? []);
       toast.success(t("team.joined", { role: t(`role.${joinRole}`) }));
     } catch (err) {
       toast.error(
